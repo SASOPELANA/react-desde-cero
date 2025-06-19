@@ -1,19 +1,18 @@
+// Import components React
+import { Header } from "./components/Header";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
 	return (
 		<>
-			<header>
-				<h1> Hola desde React y Vite, curso desde cero!! </h1>
-			</header>
+			<Header />
 
 			<section>
 				<p> Esto es un parrafo </p>
 			</section>
 
-			<footer>
-				<p> Esto es un pie de pagina </p>
-			</footer>
+			<Footer />
 		</>
 	);
 }
