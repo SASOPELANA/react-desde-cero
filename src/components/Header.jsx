@@ -1,10 +1,12 @@
 // Import css
-import "./Header.css";
 
 export const Header = () => {
 	return (
-		<header className="header">
-			<h1 className="title"> Hola desde React y Vite, curso desde cero!! </h1>
+		<header className="">
+			<h1 className="bg-amber-400 text-white text-4xl">
+				{" "}
+				Hola desde React y Vite, curso desde cero!!{" "}
+			</h1>
 		</header>
 	);
 };
