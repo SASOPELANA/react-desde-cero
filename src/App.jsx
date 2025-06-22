@@ -5,10 +5,12 @@ import Footer from "./components/Footer";
 function App() {
 	return (
 		<>
-			<Header />
+			<Header title="Mi pagina Web" show={true}>
+				<h3> Esto es un h1</h3>
+			</Header>
 
 			<section>
-				<p> Esto es un parrafo </p>
+				<p> Esto es un section 😆 </p>
 			</section>
 
 			<Footer />

@@ -1,12 +1,17 @@
-// Import css
+import PropTypes from "prop-types";
 
-export const Header = () => {
+export const Header = ({ children, title, show }) => {
 	return (
-		<header className="">
-			<h1 className="bg-amber-400 text-white text-4xl">
-				{" "}
-				Hola desde React y Vite, curso desde cero!!{" "}
-			</h1>
+		<header className="bg-amber-400 text-white text-4xl">
+			<h1>{title || "Titulo por defecto"}</h1>
+			{children}
+
+			{show && <p>Este texto se va a mostar si el prop show es true</p>}
 		</header>
 	);
+};
+
+Header.propTypes = {
+	children: PropTypes.node,
+	title: PropTypes.string,
 };
