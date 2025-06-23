@@ -6,7 +6,7 @@ export const Header = ({ children, title, show }) => {
 			<h1>{title || "Titulo por defecto"}</h1>
 			{children}
 
-			{show && <p>Este texto se va a mostar si el prop show es true</p>}
+			{show && <p>Este texto se va a mostrar si el prop show es true</p>}
 		</header>
 	);
 };
